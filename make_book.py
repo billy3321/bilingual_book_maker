@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import argparse
 import pickle
 import time
@@ -268,3 +269,9 @@ if __name__ == "__main__":
     model = MODEL_DICT.get(options.model, "chatgpt")
     e = BEPUB(options.book_name, model, OPENAI_API_KEY, RESUME)
     e.make_bilingual_book()
+
+from book_maker.cli import main
+
+if __name__ == "__main__":
+    main()
+
