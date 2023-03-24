@@ -44,6 +44,7 @@ class GPT3(Base):
             "top_p": 1,
         }
         self.session = requests.session()
+        self.language = LANG
 
     def translate(self, text):
         print(text)
@@ -68,6 +69,7 @@ class ChatGPT(Base):
     def __init__(self, key):
         super().__init__(key)
         self.key = key
+        self.language = LANG
 
     def translate(self, text):
         print(text)
